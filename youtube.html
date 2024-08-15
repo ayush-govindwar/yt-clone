@@ -5,255 +5,233 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="text.css">
+        <link rel="stylesheet" href="styles/gener.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/video.css">
+        <link rel="stylesheet" href="styles/sidebar.css">
         <title>
             Youtube.com clone
         </title>
-        <a>hello</a>
+        
         <style>
-            .p {
-                font-family: Roboto;
-                margin-top : 0px;
-                margin-bottom: 0px;
-            }
-            .thumbnail{
-                width: 300px;
-                display : block;
-            }
-            .search-bar{
-                font-size: 20px;
-                margin-left:12px;
-                display : block;
-            }
-            .video-title,.video-title2{
-                display : block;
-                margin-top :0;
-                font-size:14px;
-                font-family: Roboto;
-                font-weight: 700;
-                line-height : 20px;
-                margin-bottom : 12px;
-            }
-            .author-name,.author-name2{
-                font-size : 12px;
-                color: rgb(96,96,96);
-                margin-bottom: 4px;
-            }
-            .stats,.stats2{
-                font-size : 12px;
-                color: rgb(96,96,96);
-                margin-top: 0;
-
-            }
-            .vid1{
-               
-                display : inline-block;
-                margin-right: 10px;
-            }
-            .vid2{
-                width : 300px;
-                display: inline-block;
-                vertical-align : top;
-                
-            }
-            .thumbnail2{
-                width: 300px;
-                display : block;
-            }
-            .video-info-grid{
-                display:grid;
-                grid-template-columns : 50px 1fr;
-            }
-            .channel-pic,.channel-pic2{
-
-            }
-            .video-info{
-                
-                width : 200px;
-            }
-            .video-info-grid1{
-                display : grid;
-                grid-template-columns: 50px 1fr;
-            }
-            .profile-pic,.profile-pic2{
-                width: 40px;
-                border-radius: 50px;
-                
-            }
-            .thumbnail-row,.thumbnail-row1{
-                margin-bottom :12px;
-            }
-            .hi{
-                
-                display: inline-block;
-            }
-            .video-grid{
-                display:grid;
-                grid-template-columns: 1fr 1fr 1fr;
-            }
-
-
-
         </style>
     </head>
     <body>
-        <input class="search-bar" type="text" placeholder="Search">
+        <div class="header">
+            <div class="left-section">
+                <img 
+                class="hamburger-menu"
+                src="icons/hamburger-menu.svg">
+                <img class="youtube-logo"
+                src="icons/youtube-logo.svg">
+            </div>
+            <div class="middle-section">
+                <input class="search-bar" type="text" placeholder="Search">
+                <button class="search-button">
+                    <img class="search-icon" src="icons/search.svg">
+                        <div class="tooltip">Search</div>
+                </button>
+                <button class="voice-search-button">
+                    <img class="voice-cearch-icon" src="icons/voice-search-icon.svg">
+                </button>
+            </div>
+            <div class="right-section">
+                <img class="upload-icon" src="icons/upload.svg">
+                <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+                            <div class="notifications-icon-container">
+                                <img class="notifications-icon" src="icons/notifications.svg">
+                                <div class="notifications-count">3</div>
+                            </div>
+                
+                <img class ="user " src="channel pic/Capture001.png">
+            </div>
+            
+        </div>
+            <div class="sidebar">
+                <div class="sidebar-link">
+                    <img src="icons/home.svg " class="home-button">
+                        <div>Home</div>
+                </div>
+                <div class="sidebar-link">
+                    <img src="icons/explore.svg " class="explore-button">
+                        <div>Explore</div>
+                </div>
+                <div class="sidebar-link">
+                    <img src="icons/subscriptions.svg " class="subscription-button">
+                        <div>Subscriptions</div> 
+                </div>
+                <div class="sidebar-link">
+                    <img src="icons/originals.svg " class="original-button">
+                        <div>Originals</div>
+                </div>
+                <div class="sidebar-link">
+                    <img src="icons/youtube-music.svg " class="music-button">
+                        <div>YouTube Music</div>
+                </div>
+                <div class="sidebar-link">
+                    <img src="icons/library.svg " class="library-button">
+                        <div>Library</div>
+                </div>
+            </div>
+        
     <div class="video-grid">
+            <div class="vid1">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+                    <div class="video-time">14:20</div>
+                        </div>
+                            <div class="video-info-grid">
+                                <div class="channel-pic">
+                                    <img class="profile-pic" src="channel pic/channel-1.jpeg">
+                                </div>
+                                <div class="video-info">
+                                    <P class="video-title">
+                                        Talking Tech and AI with Google CEO Sundar Pichai!
+                                    </P>
+
+                                    <p class="author-name">
+                                        Marques Brownlee
+                                    </p>
+                                    <p class="stats">
+                                        3.4M views · 6 months ago
+                                    </p>
+                                </div>
+                            </div>
+                    </div>
+
+                
+
+        
+            
+        
+        <div class="vid2">
+            <div class="thumbnail-row1">
+                <img class="thumbnail2" src="thumbnails/thumbnail-2.webp">
+            </div>
+            <div class="video-info-grid1">
+                
+                <div class="channel-pic2"> 
+                    <img class="profile-pic2" src="channel pic/channel-2.jpeg">
+                </div>
+                <div class="hi">
+                    <P class="video-title2">
+                    
+                        Try Not To Laugh Challenge #9
+                    </P>
+                    <p class="author-name2">
+                        Markiplier
+                    </p>
+                    <p class="stats2">
+                        19M views · 4 years ago
+                    </p>
+                
+                </div>
+            </div>
+        </div>
         <div class="vid1">
             <div class="thumbnail-row">
-                <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+                <img class="thumbnail" src="thumbnails/thumbnail-3.webp">
             </div>
                 <div class="video-info-grid">
                     <div class="channel-pic">
-                        <img class="profile-pic" src="channel pic/channel-1.jpeg">
+                        <img class="profile-pic" src="channel pic/channel-3.jpeg">
                     </div>
                     <div class="video-info">
                         <P class="video-title">
-                            Talking Tech and AI with Google CEO Sundar Pichai!
+                            Crazy Tik Toks Taken Moments Before DISASTER
                         </P>
-
                         <p class="author-name">
-                            Marques Brownlee
+                            SSSniperWolf
                         </p>
                         <p class="stats">
-                            3.4M views · 6 months ago
+                            12M views · 1 year ago
                         </p>
                     </div>
                 </div>
-        </div>
+    </div>
 
             
 
-        </div>
         
-     </div>
+        
+    
     <div class="vid2">
         <div class="thumbnail-row1">
-            <img class="thumbnail2" src="thumbnails/thumbnail-2.webp">
+            <img class="thumbnail2" src="thumbnails/thumbnail-4.webp">
         </div>
         <div class="video-info-grid1">
             
             <div class="channel-pic2"> 
-                <img class="profile-pic2" src="channel pic/channel-2.jpeg">
+                <img class="profile-pic2" src="channel pic/channel-4.jpeg">
             </div>
             <div class="hi">
                 <P class="video-title2">
                 
-                    Try Not To Laugh Challenge #9
+                    The Simplest Math Problem No One Can Solve - Collatz Conjecture
                 </P>
                 <p class="author-name2">
-                    Markiplier
+                    Veritasium
                 </p>
                 <p class="stats2">
-                    19M views · 4 years ago
+                    18M views · 4 months ago
                 </p>
             
             </div>
         </div>
     </div>
+
     <div class="vid1">
         <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+            <img class="thumbnail" src="thumbnails/thumbnail-5.webp">
         </div>
             <div class="video-info-grid">
                 <div class="channel-pic">
-                    <img class="profile-pic" src="channel pic/channel-1.jpeg">
+                    <img class="profile-pic" src="channel pic/channel-5.jpeg">
                 </div>
                 <div class="video-info">
                     <P class="video-title">
-                        Talking Tech and AI with Google CEO Sundar Pichai!
+                        Kadane's Algorithm to Maximum Sum Subarray Problem
                     </P>
                     <p class="author-name">
-                        Marques Brownlee
+                        CS Dojo
                     </p>
                     <p class="stats">
-                        3.4M views · 6 months ago
+                        519K views · 5 years ago
                     </p>
                 </div>
             </div>
-</div>
+    </div>
 
         
 
-    </div>
     
- </div>
-<div class="vid2">
+
+    
+    <div class="vid2">
     <div class="thumbnail-row1">
-        <img class="thumbnail2" src="thumbnails/thumbnail-2.webp">
+        <img class="thumbnail2" src="thumbnails/thumbnail-6.webp">
     </div>
     <div class="video-info-grid1">
         
         <div class="channel-pic2"> 
-            <img class="profile-pic2" src="channel pic/channel-2.jpeg">
+            <img class="profile-pic2" src="channel pic/channel-6.jpeg">
         </div>
         <div class="hi">
             <P class="video-title2">
             
-                Try Not To Laugh Challenge #9
+                Anything You Can Fit In The Circle I’ll Pay For
             </P>
             <p class="author-name2">
-                Markiplier
+                MrBeast
             </p>
             <p class="stats2">
-                19M views · 4 years ago
+                141M views · 1 year ago
             </p>
         
         </div>
-    </div>
-</div>
-
-<div class="vid1">
-    <div class="thumbnail-row">
-        <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
-    </div>
-        <div class="video-info-grid">
-            <div class="channel-pic">
-                <img class="profile-pic" src="channel pic/channel-1.jpeg">
-            </div>
-            <div class="video-info">
-                <P class="video-title">
-                    Talking Tech and AI with Google CEO Sundar Pichai!
-                </P>
-                <p class="author-name">
-                    Marques Brownlee
-                </p>
-                <p class="stats">
-                    3.4M views · 6 months ago
-                </p>
-            </div>
+        </div>
         </div>
 </div>
-
-    
-
-</div>
-
-</div>
-<div class="vid2">
-<div class="thumbnail-row1">
-    <img class="thumbnail2" src="thumbnails/thumbnail-2.webp">
-</div>
-<div class="video-info-grid1">
-    
-    <div class="channel-pic2"> 
-        <img class="profile-pic2" src="channel pic/channel-2.jpeg">
-    </div>
-    <div class="hi">
-        <P class="video-title2">
-        
-            Try Not To Laugh Challenge #9
-        </P>
-        <p class="author-name2">
-            Markiplier
-        </p>
-        <p class="stats2">
-            19M views · 4 years ago
-        </p>
-    
-    </div>
-</div>
-</div>
-        </div>
  
 
 
@@ -288,5 +266,11 @@ to build complex websites we need container elements.
 but inside their container.
 13. nested layout technique. layouts inside layouts. 
 two types of layouts - vertical and horizotal
-
+14. flex box is the same ass css grid but its more flexible.
+15.
+@media(max-width:750px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+} this means that two columns will be activated when windows size goes less than 750px;
 -->

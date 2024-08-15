@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            position practice
+        </title>
+    </head>
+    <body style="height:3000px;
+        padding-top: 60px;
+        padding-left: 80px;">
+        <div style="
+            background-color:black;
+            color:white;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            height: 50px;
+            ">
+            header</div>
+            <div style="background-color: green;
+            color:white;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            top: 50px;
+            width: 72px;
+            ">
+                sidebar
+                <div style="background-color:red;
+                position:absolute;
+                top:10;
+                left:10;
+                color:white;">
+                    absolute
+                </div></div>
+            <div style="background-color:red;
+            position:absolute;
+            top:10;
+            left:10;
+            color:white;">
+                absolute
+            </div>
+            <div style="background-color:lightblue;
+            height:200px;
+            width:200px;
+            ">div1</div>
+            <div style= "background-color:lightpink;
+            height:200px;
+            width:200px";>div2</div>
+    </body>
+</html>
+<!--
+1. we use position:fixed to fix an element while scrolling
+position has top:0; top of the element will be 0 pixels away from top of browser window
+same but left for left:0px;
+if we set to opposite direction it will stretch 
+2. to add space to top of the element use padding in body .
+3. notice that position:absolute. here absolute is stuck to the web page while fixed(sidebar and header) is stuck to 
+browser window that is the visible part of page. if we scroll absolute goes up but header and sidebar stay with us.
+4. higher z-index elements appear in front of lower z-index elements.
+5. when you place absolute nested in fixed, it will calculate top left right and bottom based on fixed element and not
+from browser window dimensions.
+6. position relative.
+-->

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            flexbox practice
+        </title>
+    </head>
+    <body style="padding-bottom:1000px;">
+        <div style="
+            display: flex;
+            flex-direction :row;
+            ">
+            <div style="background-color : lightblue">div 1</div>
+            <div style="background-color : lightpink">div 2<p>text</p></div>
+        </div>
+        <div style="
+            margin-top :30px;
+
+            display: flex;
+            flex-direction :row;
+            ">
+            <div style="background-color : lightblue; width :100px">100px</div>
+            <div style="background-color : lightpink; flex:1;">flex 1<p>text</p></div>
+        </div>
+        <div style="
+            display: flex;
+            flex-direction :row;
+            ">
+            <div style="background-color : lightblue">div 1</div>
+            <div style="background-color : lightpink">div 2<p>text</p></div>
+        </div>
+        <div style="
+            margin-top :30px;
+            height : 70px;
+            border:-width:1px;
+            border-style:solid;
+            border-color: gray;
+            display: flex;
+            flex-direction :row;
+            justify-content:end;
+            ">
+            <div style="background-color : lightblue; width :100px">100px</div>
+            <div style="background-color : lightpink; width:100px;">flex 1<p>text</p></div>
+            <div style="background-color : lightblue; width :100px">100px></div>
+        </div>
+        <div style="
+            margin-top :30px;
+            height : 70px;
+            border:-width:1px;
+            border-style:solid;
+            border-color: gray;
+            display: flex;
+            flex-direction :row;
+            justify-content:space-between;
+            ">
+            <div style="background-color : lightblue; width :100px">100px</div>
+            <div style="background-color : lightpink; width:100px;">flex 1<p>text</p></div>
+            <div style="background-color : lightblue; width :100px">100px></div>
+        </div>
+        <div style="
+            margin-top :30px;
+            height : 70px;
+            border:-width:1px;
+            border-style:solid;
+            border-color: gray;
+            display: flex;
+            flex-direction :row;
+            justify-content:space-between;
+            align-items:start;
+            ">
+            <div style="background-color : lightblue; width :100px">100px</div>
+            <div style="background-color : lightpink; width:100px;">flex 1</div>
+            <div style="background-color : lightblue; width :100px">100px></div>
+        </div>
+        
+    </body>
+</html>
+<!--
+1.in flex elements behave like inline block elements that is they take as much space as needed for them
+2. in grid we first set columns and then elements fit in that column
+3. flex:1 means take up remaining space like 1fr
+4. flex :2, means 2fr. 
+5. if we change order of div here the elements keep their width, in grid if you change order of div that is if you try 
+to swap 100 px width div with name hi and 1fr width div with name bye, the hi will have 1fr and bye will have 100 px 
+width. while in flexbox after swapping order hi will still have 100 px and bye 1fr just that their position on the webpage 
+will be changed. elements take width along with them.
+6. justify-content: end will determine alignment of flex elements- horizontlly
+7.align-items:start; aligns items within flexbox -vertically
+8. in nested flexbox both should be specified as flexbox
+9.flex-shrink:0 avoids flexbox from shrinking while resizing window
+10. flex-direction column makes divs show on top of each other. while flec-direction row makes divs show beside 
+of each other .
+-->
